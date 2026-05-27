@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            color: red;
+            font-size: 30px;
+            border: solid 2px black;
+            height: 50px;
+            width: 300px;
+            margin: auto;   
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one"> My Name is vishal sharma</div>
+    <script>
+        var a= document.querySelector(".one");
+        // a.addEventListener("click",()=>{
+        //     a.style.color="blue";
+        //     alert("you have clicked the text");
+        // })
+        a.addEventListener("dblclick",()=>{
+            a.style.backgroundColor="brown";
+            a.style.color="blue";
+        })
+        addEventListener("mousedown",()=>{
+            a.style.fontSize="50px";
+        })
+        addEventListener("mouseup",()=>{
+            a.style.fontSize="20px";
+            a.style.backgroundColor="grey";
+        })
+        
+    </script>
+  <input type="text" class="onee" placeholder="enter your name">
+    <script>
+        var b= document.querySelector(".onee");
+        b.addEventListener("mouseover",()=>{
+            b.style.backgroundColor="yellow";
+            b.style.color="green";
+        })
+        b.addEventListener("mouseout",()=>{
+            b.style.backgroundColor="pink";
+            b.style.color="black";
+        })
+        b.addEventListener("keydown",()=>{
+            b.style.fontSize="100px";
+            b.style.backgroundColor="red";
+        })
+            b.addEventListener("keyup",()=>{
+                b.style.fontSize="20px";
+                b.style.backgroundColor="grey";
+            })
+            b.addEventListener("keypress",()=>{
+                b.style.fontSize="50px";
+                b.style.backgroundColor="blue";
+            })
+            
+    </script>
+</body>
+</html>
