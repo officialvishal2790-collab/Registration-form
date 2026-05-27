@@ -1,0 +1,100 @@
+var ar = [1,2,3,4,5];
+console.log(ar);
+// // value by index
+// console.log(ar[2]);
+// delete ar[2];
+// console.log(ar);
+// // method
+// ar.push(6); //add 6 to the end of the array
+// console.log(ar);
+// ar.pop();// remove the last element of the array
+// console.log(ar);
+var b=ar.length; //length of the array
+console.log(b);
+ar.unshift(0); // add 0 to the beginning of the array
+console.log(ar);
+ar.shift(); // remove the first element of the array
+console.log(ar);
+
+
+// // var ar2=["raj","ravi","raju","rajesh"];
+// // var add=ar2.join(" ** ");
+// // console.log(add);
+// var a=[1,2,3,4,5];
+// var b=a.map((val,index,a)=> {
+//     console.log(a[index] =val*5);
+// })
+// var c=a.reduce((acc,val,)=>(acc+val),);
+// console.log(c);
+var user={
+    name:"ram",
+    age:30,
+    city:"kathmandu"
+}
+console.log(user);
+for(let key in user){
+    console.log(key + ": " + user[key]);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="one">My name is vishal sharma</p>
+    <button onclick="clc()">Change HTML</button>
+    <button onclick="nam()">Change NAME</button>
+    <button onclick="color()"> Change COLOR</button>
+
+    <script>
+
+        function clc() {
+            var para = document.getElementById("one");
+            para.innerHTML = "<h1>My name is Jatin Paliwal and I am learning DOM </h1 > "}
+                function nam() {
+                    var para = document.getElementById("one");
+                    para.innerText = "dwijh "
+                }
+                function color() {
+                    var para = document.getElementById("one");
+                    para.style.color = "red";
+                }
+    </script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="lion" src="https://tse1.mm.bing.net/th/id/OIP.p4uSyJTACdmOn4irZagyfgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="red lion">
+    <button onclick="blue()">blue lion</button>
+    <button onclick="golden()">golden lion</button>
+    <button onclick="black()">black lion</button>
+
+    <script>
+        function blue(){
+            var para = document.getElementById("lion");
+            para.src="https://tse4.mm.bing.net/th/id/OIP.dYrkLfhNdMSfvwtDQnwlsAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+        }
+        function golden(){
+            var para = document.getElementById("lion");
+            para.src="https://tse3.mm.bing.net/th/id/OIP.IybBLsx6ealH7YoqQU4K5QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+        }
+        function black(){
+            var para = document.getElementById("lion");
+            para.src="https://tse4.mm.bing.net/th/id/OIP.NB8I980lcMvPyDxXR1nYxgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+        }
+    </script>
+</body>
+</html>
